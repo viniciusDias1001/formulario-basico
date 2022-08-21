@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aula03.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <div>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+     <p class="titulo">Formulario</p>
+     <p>
+        <label for="nome">
+        Nome:
+            <input class = "nome"type="text" id="nome" name="nome" placeholder="Digite seu nome completo " required>
+        </label>
+
+        <p>
+            <p>
+                <label for="dev">
+                    Sou um Dev: 
+                    <input type="checkbox" id="dev" nome="dev">
+                </label>
+                <label for="us">
+                    Sou um Usuário: 
+                    <input type="checkbox" id="us" nome="usuario">
+                </label>
+            </p>
+            <p>
+                Gênero:
+                <label for="mas">
+                    <br>
+                    Masculino
+                    <input type="radio" id="mas" name="g" value="Masculino"> 
+                </label><br>
+                <label for="fem">
+                   Feminino
+                    <input type="radio" id="fem" name="g" valor="feminino">
+                </label>
+            </p>
+
+            <p>
+                <label for="foto">
+                    Sua foto: 
+                    <input type="file" id="foto" name="foto" accept=".png, .jpg">
+                </label>
+            </p>
+
+            <p>
+               <label for="data"> Data:</label>
+               <input type="date" name="data" id="data"> 
+            </p>
+
+            <p>
+                <label for="Hora"> Hora Local:</label>
+                <input type="time" name="Hora" id="Hora"> 
+             </p>
+
+             <p>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" placeholder="ex: email@email.com" required>
+                </label>
+             </p>
+
+             <p>
+                <label for="github">
+                    Link Github
+                    <input type="url" placeholder="Sua URL" required id="github" name="github">
+                </label>
+             </p>
+           
+          
+            <input type="submit" value="Enviar" class="enviar">
+            <input type="reset" value="Reset" class="reset">
+            
+        </p>
+        
+     </p>
+           
+      
+    </form>
+</div>
+    
+</body>
+</html>
